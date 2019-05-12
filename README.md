@@ -138,3 +138,9 @@ Scrollview 滑动的时候可以动态的给指定的view添加补间动画
 ### 提问
 
 1. android系统的控件是如何识别我们自定义的属性的
+
+### 具体的实现思路
+
+说直接点，其实就是一个偷天换日的一种思路。
+通过观看源码，LayoutInflater.inflate方法里面最后会调用MyLinearLayout的addView方法， 重写MyLinearLayout的
+addView方法，对添加的View外面在包裹一层MyFrameLayout,对自定义的属性最终其实是作用在MyFrameLayout上面的。
