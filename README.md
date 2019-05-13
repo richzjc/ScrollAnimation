@@ -145,3 +145,5 @@ Scrollview 滑动的时候可以动态的给指定的view添加补间动画
 通过观看源码，LayoutInflater.inflate方法里面最后会调用MyLinearLayout的addView方法， 重写MyLinearLayout的
 addView方法，对添加的View外面在包裹一层MyFrameLayout,对自定义的属性最终其实是作用在MyFrameLayout上面的。
 
+
+[简书地址](https://www.jianshu.com/p/53e0d91f49b0)
